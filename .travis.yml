@@ -1,0 +1,20 @@
+language: minimal
+
+git:
+  depth: false
+
+os: linux
+dist: jammy
+
+cache:
+  directories:
+    - $HOME/.m2
+
+services:
+  - docker
+
+script:
+  - chmod 777 -R $PWD/src/main/c++/
+  - chmod 777 $PWD/src/main/scripts/linux64/build.sh
+  - chmod 777 $PWD/src/main/scripts/win64/build.sh
+  - travis_retry docker run -v $PWD:/src -v $HOME/.m2:/root/.m2 -e BRANCH=$TRAVIS_BRANCH  -e VAULT_TOKEN=$VAULT_TOKEN moussavdb/build-java-native
