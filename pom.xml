@@ -36,7 +36,7 @@
   <inceptionYear>2025</inceptionYear>
   <scm>
     <connection>scm:git:https://github.com/yildiz-online/component-native-bit7z</connection>
-    <developerConnection>scm:git:https://github.com/yildiz-online/component-native-bit7zeloperConnection>
+    <developerConnection>scm:git:https://github.com/yildiz-online/component-native-bit7z</developerConnection>
     <url>https://github.com/yildiz-online/component-native-bit7z</url>
   </scm>
 
